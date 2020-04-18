@@ -58,3 +58,27 @@ header {
   position: sticky;
   top: 0;
 }
+
+ul a:link {
+  color: #8a2be2;
+}
+
+ul a:visited {
+  color: #006400;
+}
+
+ul a:hover {
+  font-size: 25px;
+  border: 2px solid #800000;
+}
+
+ul a:active {
+  border: 1px solid #008b8b;
+  background-color: #ffffe0;
+  padding: 5px;
+}
+
+ul li:last-child::after {
+  color: #7b68ee;
+  content: " your messenger";
+}
