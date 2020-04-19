@@ -1,84 +1,52 @@
-.parent {
-  width: 500px;
-  height: 500px;
-  border: 2px solid black;
-  padding: 10px;
-  background-image: url(../assets/ocean.jpg);
-  // position: relative;
-}
-
-.child {
-  width: 200px;
-  height: 100px;
-  border: 2px solid black;
-  //position: absolute;
-  top: 150px;
-  left: 150px;
-}
-h2 {
-  text-align: center;
-  margin: 20px;
-  color: white;
-}
-
-.gift {
-  color: blueviolet;
-  font-size: 50px;
-  position: relative;
-}
-
-.fa-gift {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  padding: 10px;
-  background-color: white;
-}
-
-nav {
-  color: blue;
-  border: 1px solid black;
-  text-align: center;
-  background-color: #87ceeb;
-  padding: 10px;
-}
-
-html {
-  height: 100%;
-}
+@import "~bootstrap/scss/bootstrap";
 
 body {
-  height: 100%;
-  position: relative;
+  padding-top: 5rem;
 }
 
-header {
-  height: 5%;
-  margin-bottom: 20px;
-  position: sticky;
+.jumbotron {
+  background: none;
+}
+
+.for-whom .card {
+  border: none;
+}
+
+.icon-container {
+  margin-bottom: 2rem;
+}
+
+.icon-container .fa-user-friends,
+.icon-container .fa-laptop,
+.icon-container .fa-hands-helping {
+  font-size: 3rem !important;
+}
+
+section {
+  margin-bottom: 80px;
+  margin-top: 80px;
+  min-height: 30vh;
+}
+
+.small-square-image {
+  width: 50px;
+  height: 50px;
+}
+
+.map {
+  background: url(..//assets/map.png.jpg) no-repeat center center fixed;
+}
+
+.map::after {
+  content: "";
+
+  opacity: 0.5;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
-ul a:link {
-  color: #8a2be2;
-}
-
-ul a:visited {
-  color: #006400;
-}
-
-ul a:hover {
-  font-size: 25px;
-  border: 2px solid #800000;
-}
-
-ul a:active {
-  border: 1px solid #008b8b;
-  background-color: #ffffe0;
-  padding: 5px;
-}
-
-ul li:last-child::after {
-  color: #7b68ee;
-  content: " your messenger";
+.register-form {
+  opacity: 1;
 }
