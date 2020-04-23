@@ -8,255 +8,217 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">ProFrontend</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="container-fluid lists-container">
+      <div class="row">
+        <div class="col-6" id="importantAndUrgent">
+          <div class="row h-10 header-background">
+            <div class="col-12"><h4>Important and Urgent</h4></div>
+          </div>
+          <div class="row h-75">
+            <div class="col-6">
+              <h6>To Do</h6>
+              <ul class="todoList">
+                <li>
+                  <input type="checkbox" /> Task 1 <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" /> Task 2 <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" /> Task 3 <i class="fas fa-trash"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h6>Done</h6>
+              <ul class="doneList">
+                <li>
+                  <input type="checkbox" checked /> Task 1
+                  <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked /> Task 2
+                  <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked /> Task 3
+                  <i class="fas fa-trash"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row h-15">
+            <div class="col-8">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control new-task-input"
+                  placeholder="Add new task"
+                />
+              </div>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-info btn-block">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6" id="importantAndNotUrgent">
+          <div class="row h-10 header-background">
+            <div class="col-12"><h4>Important and Not Urgent</h4></div>
+          </div>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="dropdown01"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Dropdown</a
-            >
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+          <div class="row h-75">
+            <div class="col-6">
+              <h6>To Do</h6>
+              <ul class="todoList">
+                <li>
+                  <input type="checkbox" /> Task 1 <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" /> Task 2 <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" /> Task 3 <i class="fas fa-trash"></i>
+                </li>
+              </ul>
             </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="text"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="jumbotron">
-            <h1 class="display-4">Self education</h1>
-            <p class="lead">
-              This is a simple hero unit, a simple jumbotron-style component for
-              calling extra attention to featured content or information.
-            </p>
-            <hr class="my-4" />
-            <p>
-              It uses utility classes for typography and spacing to space
-              content out within the larger container.
-            </p>
-            <a class="btn btn-warning btn-lg" href="#" role="button"
-              >Learn more</a
-            >
-          </div>
-        </div>
-        <div class="col-md-6">
-          <img class="w-100" src="../src/assets/obl-011.jpg" alt="main image" />
-        </div>
-      </div>
-    </div>
-    <section class="container for-whom">
-      <div class="row">
-        <div class="col-md-6 offset-md-3 text-center">
-          <h2 class="my-3">Кому подойдёт курс?</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="text-center icon-container">
-                <i class="fas fa-user-friends text-warning"></i>
-              </div>
-              <h4>Junior Developer</h4>
-              <div class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
+            <div class="col-6">
+              <h6>Done</h6>
+              <ul class="doneList">
+                <li>
+                  <input type="checkbox" checked /> Task 1
+                  <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked /> Task 2
+                  <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked /> Task 3
+                  <i class="fas fa-trash"></i>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="text-center icon-container">
-                <i class="fas fa-laptop text-warning"></i>
-              </div>
-              <h4>Mid Developer</h4>
-              <div class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <div class="row h-15">
+            <div class="col-8">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control new-task-input"
+                  placeholder="Add new task"
+                />
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="text-center icon-container">
-                <i class="fas fa-hands-helping text-warning"></i>
-              </div>
-              <h4>Senior Developer</h4>
-              <div class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-info btn-block">Add</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="container about-school text-center">
       <div class="row">
-        <div class="col-md-6 offset-md-3 text-center">
-          <h2 class="my-3">О нашей школе</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 offset-md-2 text-center">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 offset-md-2 text-center">
-          <div class="row">
-            <div class="col-sm">
-              <img
-                class="small-square-image"
-                src="../src/assets/icons/html-5.png"
-                alt="html"
-              />
+        <div class="col-6" id="notImportantAndUrgent">
+          <div class="row h-10 header-background">
+            <div class="col-12"><h4>Not Important and Urgent</h4></div>
+          </div>
+          <div class="row h-75">
+            <div class="col-6">
+              <h6>To Do</h6>
+              <ul class="todoList">
+                <li>
+                  <input type="checkbox" /> Task 1 <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" /> Task 2 <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" /> Task 3 <i class="fas fa-trash"></i>
+                </li>
+              </ul>
             </div>
-
-            <div class="col-sm">
-              <img
-                class="small-square-image"
-                src="../src/assets/icons/css-3.png"
-                alt="css"
-              />
-            </div>
-            <div class="col-sm">
-              <img
-                class="small-square-image"
-                src="../src/assets/icons/javascript.png"
-                alt="js"
-              />
-            </div>
-            <div class="col-sm">
-              <img
-                class="small-square-image"
-                src="../src/assets/icons/html-5.png"
-                alt="html"
-              />
-            </div>
-            <div class="col-sm">
-              <img
-                class="small-square-image"
-                src="../src/assets/icons/css-3.png"
-                alt="css"
-              />
+            <div class="col-6">
+              <h6>Done</h6>
+              <ul class="doneList">
+                <li>
+                  <input type="checkbox" checked /> Task 1
+                  <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked /> Task 2
+                  <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked /> Task 3
+                  <i class="fas fa-trash"></i>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container-fluid map">
-      <div class="row">
-        <div class="col-md-6 offset-md-3 vertical-center">
-          <div class="register-form">
-            <h3 class="mb-2 text-center">Register now!</h3>
-            <form>
-              <div class="form-row">
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="First name"
-                  />
-                </div>
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Last name"
-                  />
-                </div>
+          <div class="row h-15">
+            <div class="col-8">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control new-task-input"
+                  placeholder="Add new task"
+                />
               </div>
-              <div class="form-row mt-2">
-                <button type="button" class="btn btn-warning btn-lg btn-block">
-                  Register for course
-                </button>
-              </div>
-            </form>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-info btn-block">Add</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-     
-        <div class="row">
-          <div class="col-md-6 col-xs-12 text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+        <div class="col-6" id="notImportantAndNotUrgent">
+          <div class="row h-10 header-background">
+            <div class="col-12"><h4>Not Important and not Urgent</h4></div>
           </div>
-          <div class="col-md-6 col-xs-12 text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+          <div class="row h-75">
+            <div class="col-6">
+              <h6>To Do</h6>
+              <ul class="todoList">
+                <li>
+                  <input type="checkbox" /> Task 1 <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" /> Task 2 <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" /> Task 3 <i class="fas fa-trash"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h6>Done</h6>
+              <ul class="doneList">
+                <li>
+                  <input type="checkbox" checked /> Task 1
+                  <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked /> Task 2
+                  <i class="fas fa-trash"></i>
+                </li>
+                <li>
+                  <input type="checkbox" checked /> Task 3
+                  <i class="fas fa-trash"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row h-15">
+            <div class="col-8">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control new-task-input"
+                  placeholder="Add new task"
+                />
+              </div>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-info btn-block">Add</button>
+            </div>
           </div>
         </div>
       </div>
