@@ -2,13 +2,6 @@ import "@fortawesome/fontawesome-free/js/all";
 import "../styles/index.scss";
 import "bootstrap";
 
-// 0) Document loaded get list  an save to variable
-// 1) Add event Listener
-// 2) Find input field
-// 3) Get value
-// 4) Get UL
-// 5) Create new li element > (checkox, text, icon)
-
 let importantAndUrgent;
 let importantAndNotUrgent;
 let notImportantAndUrgent;
@@ -52,20 +45,46 @@ function getInputValue(quadrant) {
 
 function addNewItem(value, quadrant) {
   const list = quadrant.getElementsByClassName("todoList")[0];
-  const newLi = getLiWithText(value);
+  const newLi = getLiWithText(value, quadrant);
   list.appendChild(newLi);
 }
 
-function getLiWithText(value) {
+function moveIntoDone(li, quadrant) {
+  const secondList = quadrant.getElementsByClassName("doneList");
+  secondList[0].appendChild(li);
+}
+
+// function moveIntoToDo(li, quadrant) {
+//   const transferLi = quadrant.getElementsByClassName("todoList");
+//   changeLiEv = quadrant.getElementsByTagName("input")[0];
+//   checkbox.addEventListener("click"),
+//     () => {
+//       transferLi[0].appendChild(li);
+//     };
+// }
+
+function getLiWithText(value, quadrant) {
   const newListItem = document.createElement("li");
+  //const deleteListItem = document.removeChild("li");
   const checkbox = getCheckBox();
   const text = document.createTextNode(" " + value);
   const space = document.createTextNode(" ");
   const icon = getDeleteIcon();
+  //const span = getDeleteLi();
   newListItem.appendChild(checkbox);
   newListItem.appendChild(text);
   newListItem.appendChild(space);
   newListItem.appendChild(icon);
+  // deleteListItem.removeChild(checkbox);
+  // deleteListItem.removeChild(text);
+  // deleteListItem.removeChild(space);
+  // deleteListItem.removeChild(icon);
+  checkbox.addEventListener("click", () => {
+    moveIntoDone(newListItem, quadrant);
+  });
+  // span.addEventListener("click", () => {
+  //   getDeleteLi();
+  // });
   return newListItem;
 }
 
@@ -80,3 +99,8 @@ function getDeleteIcon() {
   i.className = "fas fa-trash";
   return i;
 }
+
+// function getDeleteLi() {
+//   const trash = document.getElementsByClassName("todoList");
+//   document.body.removeChild(li);
+// }
